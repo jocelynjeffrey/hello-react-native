@@ -1,7 +1,7 @@
 import React from 'react';
-import Login from './assets/components/Login.js';
-import About from './assets/components/About.js';
-import Topics from './assets/components/Topics.js';
+import Settings from './assets/components/Settings.js';
+import Schedule from './assets/components/Schedule.js';
+import Plans from './assets/components/Plans.js';
 import GlobalStyles from './assets/styles/global.js';
 
 import { StyleSheet, Text, View, AppRegistry } from 'react-native'
@@ -16,33 +16,33 @@ const RouteConfig = () => (
         <Link
           to="/"
           underlayColor='#f0f4f7'
-          style={GlobalStyles.navItem}>
-            <Text>Home</Text>
+          style={GlobalStyles.navLink}>
+            <Text style={GlobalStyles.navText}>Home</Text>
         </Link>
         <Link
-          to="/about"
+          to="/schedule"
           underlayColor='#f0f4f7'
-          style={GlobalStyles.navItem}>
-            <Text>About</Text>
+          style={GlobalStyles.navLink}>
+            <Text style={GlobalStyles.navText}>Schedule</Text>
         </Link>
         <Link
-          to="/topics"
-          underlayColor='#f0f4f8'
-          style={GlobalStyles.navItem} >
-            <Text>Topics</Text>
-        </Link>
-        <Link
-          to="/login"
+          to="/plans"
           underlayColor='#f0f4f7'
-          style={GlobalStyles.navItem} >
-            <Text>Login</Text>
+          style={GlobalStyles.navLink} >
+            <Text style={GlobalStyles.navText}>My Plans</Text>
+        </Link>
+        <Link
+          to="/settings"
+          underlayColor='#f0f4f7'
+          style={GlobalStyles.navLink} >
+            <Text style={GlobalStyles.navText}>Settings</Text>
         </Link>
       </View>
 
       <Route exact path="/" component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/topics" component={Topics}/>
-      <Route path="/login" component={Login}/>
+      <Route path="/schedule" component={Schedule}/>
+      <Route path="/plans" component={Plans}/>
+      <Route path="/settings" component={Settings}/>
     </View>
   </NativeRouter>
 )

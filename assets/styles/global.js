@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 
 const GlobalStyles = StyleSheet.create({
   container: {
-    marginTop: 25,
+    marginTop: 20,
     padding: 10,
   },
   header: {
@@ -13,12 +13,16 @@ const GlobalStyles = StyleSheet.create({
   },
   nav: {
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    backgroundColor: '#292B43'
   },
-  navItem: {
+  navLink: {
     flex: 1,
     alignItems: 'center',
     padding: 10,
+  },
+  navText: {
+    color: '#00DED1'
   },
   subNavItem: {
     padding: 5,
@@ -26,7 +30,10 @@ const GlobalStyles = StyleSheet.create({
   topic: {
     textAlign: 'center',
     fontSize: 15,
-  }
+  },
+  active: {
+    color: '#fff',
+  },
 })
 
 export default GlobalStyles;

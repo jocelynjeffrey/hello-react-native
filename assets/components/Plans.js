@@ -4,15 +4,15 @@ import { NativeRouter, Route, Link } from 'react-router-native';
 import styles from '../styles/global.js'
 
 
-const Topic = ({ match }) => (
+const Plan = ({ match }) => (
   <Text>
-    {match.params.topicId} and test
+    {match.params.planId} and test
   </Text>
 )
 
-const Topics = ({ match }) => (
+const Plans = ({ match }) => (
   <View>
-    <Text style={styles.header}>Topics</Text>
+    <Text style={styles.header}>Plans</Text>
     <View>
       <Link
         to={`${match.url}/rendering`}
@@ -31,11 +31,11 @@ const Topics = ({ match }) => (
       </Link>
     </View>
 
-    <Route path={`${match.url}/:topicId`} component={Topic}/>
+    <Route path={`${match.url}/:planId`} component={Plan}/>
     <Route exact path={match.url} render={() => (
-      <Text>Please select a topic.</Text>
+      <Text>Please select a plan.</Text>
     )} />
   </View>
 )
 
-export default Topics;
+export default Plans;
