@@ -1,15 +1,21 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 
-const GlobalStyles = StyleSheet.create({
+const baseStyles = StyleSheet.create({
   container: {
-    marginTop: 20,
-    padding: 10,
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'stretch'
   },
-  header: {
+  headline: {
     fontSize: 20,
-    marginTop: 40,
-    textAlign: 'center'
+    marginLeft: 40,
+    marginTop: 120,
+    color: '#00DED1',
+    fontWeight: 'bold',
+    textAlign: 'left',
+    backgroundColor: 'transparent'
   },
   nav: {
     flexDirection: 'row',
@@ -36,4 +42,4 @@ const GlobalStyles = StyleSheet.create({
   },
 })
 
-export default GlobalStyles;
+export default baseStyles;

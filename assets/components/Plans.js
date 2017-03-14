@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { NativeRouter, Route, Link } from 'react-router-native';
-import styles from '../styles/global.js'
+import base from '../styles/baseStyles.js'
 
 
 const Plan = ({ match }) => (
@@ -12,7 +12,7 @@ const Plan = ({ match }) => (
 
 const Plans = ({ match }) => (
   <View>
-    <Text style={styles.header}>Plans</Text>
+    <Text style={base.headline}>Plans</Text>
     <View>
       <Link
         to={`${match.url}/rendering`}

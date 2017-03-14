@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import styles from '../styles/global.js'
+import base from '../styles/baseStyles.js'
 
 class Schedule extends Component {
   render() {
     return (
-      <Text style={styles.header}>
+      <Text style={base.headline}>
         Schedule
       </Text>
     );

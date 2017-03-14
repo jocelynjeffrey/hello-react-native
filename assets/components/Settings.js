@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-import styles from '../styles/global.js'
+import { Text, View, StyleSheet } from 'react-native';
+import base from '../styles/baseStyles.js'
 
 class Settings extends Component {
   render() {
     return (
-      <Text style={styles.header}>
+      <Text style={ base.headline }>
         Settings page
       </Text>
     );
